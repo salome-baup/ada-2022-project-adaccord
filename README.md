@@ -14,8 +14,17 @@ In the 17th century, Molière, the French playwright, actor, and poet depicted t
 The goal in this project is to analyze the content of plot summaries and characterized them by looking at the world fields, word occurrences, as well as the words polarity and general sentences. This would allow to identify the main concerns of society (e.g., climate catastrophe, war, technological disaster, family disunity) and evaluate the feelings associated with these topics. We also want to see the evolution of these concerns over time and include critical reviews of the movies to obtain a more complete characterization of the situation.
 
 ## Research Questions <a name="Research_questions"></a>
+During this work, we will address those questions:  
+- What are the most prevalent concerns of the world population ? OR How the cinema reflects the most prevalent concerns of the world population ?
+- Which feelings are associated with these topics ?
+- How are these concerns and feelings evolving over time ?
 
 ## Proposed additional datasets and files <a name="Proposed_additional_datasets_and_files"></a>
+The following additional datasets are used or are planned to be used:
+- Mappages Freebase/Wikidata: maps the given Freebase Ids to WikiData, used to recover ethnicities and actor names in the dataset.
+- Metascore: weighted average of reviews from top published critic reviews for a given movie, will be used to weight the different concerns.
+- names_dataset: provides information about names (popularity, country, gender), used to discard proper names from plot summaries.
+- others ??
 
 ## Methods <a name="Methods"></a>
 
