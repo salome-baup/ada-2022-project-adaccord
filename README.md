@@ -28,10 +28,9 @@ The following additional datasets are used or are planned to be used:
 
 ## Methods <a name="Methods"></a>
 To characterize the plot summaries lexical fields, we perform topics extraction using natural language processing (NLP) techniques. The idea is to analyze the frequency of words and phrases in plot summaries, as well well as their relationship in order to find clusters of words that appear more frequently.   
-The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique first requires data pre-processing to tokenize, PoS tags, lemmatize and removing stop words from the plot. Then LDA can be run and returns the most common topics among all the plots. LDA can be fine-tuned to improve results.  
-The second technique used is BERT, a transformer-based model that have shown promising results in NLP tasks. +descrbibe
+The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique first requires data pre-processing to tokenize, PoS tags, lemmatize and removing stop words from the plots. Then, LDA can be run and returns the most common topics among all plots. LDA can subsequently be fine-tuned to improve results.  
+The second technique used is BERT, which is a transformer-based model that have shown promising results in NLP tasks. +describe
 Finally, a sentiment analysis will be conducted to study the polarity of plot summaries and determine the glogal feelings associated with them.
-
 
 ## Proposed timeline <a name="Proposed_timeline"></a>
 
