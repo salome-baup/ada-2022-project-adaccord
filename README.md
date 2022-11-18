@@ -17,9 +17,9 @@ The goal in this project is to analyze the content of plot summaries and charact
 
 ## ${\color{#CC0000}\mathrm{Research\ questions}}$ <a name="Research_questions"></a>
 During this work, we will address those questions:  
-- What are the most prevalent concerns of the world population reflected by cinema ?
-- Which feelings are associated with these topics ?
-- How are these concerns and feelings evolving over time ?
+- What are the most prevalent concerns of the world population reflected by cinema?
+- Which feelings are associated with these topics?
+- How are these concerns and feelings evolving over time?
 
 ## ${\color{#CC0000}\mathrm{Proposed\ additional\ datasets\ and\ files}}$ <a name="Proposed_additional_datasets_and_files"></a>
 The following additional datasets are used or are planned to be used:
@@ -77,4 +77,4 @@ Taking all the results together, we will draw conclusions and try to answer our 
 - Step 9: Everybody 
 
 ## ${\color{#CC0000}\mathrm{Questions\ for\ the\ TAs}}$ <a name="Questions_for_the_TAs"></a>
-
+Do you know any existing model for multi-sentiment analysis? Which option do we have in order to have more complex sentiment classes such as sadness, fear, happiness, anger (...)?
