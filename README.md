@@ -59,10 +59,10 @@ Finally, a sentiment analysis will be conducted to study the polarity of plot su
 - Step 4 (finished)
 - Step 5 (started but need improvments)  
 
-**Between 02/12/22 to 23/12/22:**
--First week: finish part 5, that is fine-tuned LDA, analyse results from LDA and BERT and create visualizations.
--Second week: finish part 6, that is perfom Sentiment analysis, analyse data and create visualizations.
--Last week: finish part 7 and 8
+**Between 02/12/22 to 23/12/22:** 
+- First week: finish part 5, that is fine-tuned LDA, analyse results from LDA and BERT and create visualizations.
+- Second week: finish part 6, that is perfom Sentiment analysis, analyse data and create visualizations.
+- Last week: finish part 7 and 8
 
 ## Organisation within the team <a name="Organisation_within_the_team"></a>
 
