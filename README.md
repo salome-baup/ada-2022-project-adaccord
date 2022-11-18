@@ -27,24 +27,24 @@ The following additional datasets are used or are planned to be used:
 - others ??
 
 ## Methods <a name="Methods"></a>
-**Step 1: Metadata scrapping, cleaning, and dealing with duplicate or missing values**
+**Step 1: Metadata scrapping, cleaning, and dealing with duplicate or missing values**  
 After loading the characters and movies datasets, columns are cleaned by removing the freebase ID. Then, duplicated values are checked in both datasets and finally missing values are handled.
 
-**Step 2: Plot summaries pre-processing**
+**Step 2: Plot summaries pre-processing**  
 Plot summaries are loaded, missing one are checked, and only English plots are kept. Then, pre-processing is done, including tokenization to divide plots into lists of substrings, PoS tagging to categorize words, lemmatization to reduce the different forms of a word to one single form and finally stop words removal to only extract meaningful information.
 
-**Step 3: Including Metascore**
+**Step 3: Including Metascore**  
 To obtain a better characterization of the movie at a time close to the release date, Metascore are loaded, missing values are checked and they are added to the movies dataset.
 
-**Step 4: General preliminary analysis**
+**Step 4: General preliminary analysis**  
 This part contain a preliminary analysis of the plots structure with the information gathered until then. Some statistics and visualizations are shown concerning the number of words and punctuation, the polarity of words and the movie genre distribution. In addition, the ten most tokens for each plots are obtained.
 
-**Step 5: Topic extraction**
+**Step 5: Topic extraction**  
 To characterize the plot summaries lexical fields, topics extraction are performed using natural language processing (NLP) techniques. The idea is to analyze the frequency of words and phrases in plot summaries, as well well as their relationship in order to find clusters of words that appear more frequently.   
 - The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique returns the most common topics among all plots and can subsequently be fine-tuned to improve results.  
 - The second technique used is the Bidirectional Encoder Representations from Transformers (BERT). It uses a transformer, that is an attention mechanism learning contextual relations between words via an encoder that reads the text input. The difference with this technique is that it reads the input text in a non-directional manner, which is why it is consider BidirectionaL.
 
-**Step 6: Sentiment analysis**
+**Step 6: Sentiment analysis**  
 Finally, a sentiment analysis will be conducted to study the polarity of plot summaries and determine the global feelings associated with them.
 
 **Step 7: Results gathering and interpretation**
