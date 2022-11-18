@@ -1,4 +1,4 @@
-# Cinema as a mirror of society's thoughts
+# 🎬 Refl'action: Cinema as a mirror of society's thoughts
 
 ## Table of Contents
 1. [Abstract](#Abstract)
