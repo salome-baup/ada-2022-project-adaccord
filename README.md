@@ -2,7 +2,7 @@
 
 ## ${\color{#CC0000}\mathrm{Requirements}}$
 You will find a requirement.txt file to install any required libraries.  
-In addition, intermediary augmented datasets are present on a [GoogleDrive]([https://drive.google.com/drive/folders/1dKaLkH2O8icyDgruv5u8GI_DSpbC0uEB?usp=sharing](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub. 
+In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub. 
 
 ## ${\color{#CC0000}\mathrm{Table\ of\ Contents}}$
 1. [Abstract](#Abstract)
