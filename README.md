@@ -7,7 +7,7 @@
 4. [Methods](#Methods)
 5. [Proposed timeline](#Proposed_timeline)
 6. [Organisation within the team](#Organisation_within_the_team)
-7. [Questions for the TAs](#Questions)
+7. [Questions for the TAs](#Questions_for_the_TAs)
 
 
 ## ${\color{#CC0000}\mathrm{Abstract}}$  <a name="Abstract"></a> 
@@ -48,10 +48,11 @@ To characterize the plot summaries lexical fields, topics extraction are perform
 **Step 6: Sentiment analysis**  
 As a next phase, a sentiment analysis will be conducted to study the polarity of plot summaries and determine the global feelings associated with them.
 
-**Step 7: Time evolution analysis**
+**Step 7: Time evolution analysis**  
+Concerns and sentiments evolution over time will be analyzed by splitting the movies according to their release dates. Statistical analysis will then be performed to see any significative differences across periods of time. 
 
-
-**Step 8: Results gathering and interpretation**
+**Step 8: Results gathering and interpretation**  
+Taking all the results together, we will draw conclusions and try to answer our research questions. 
 
 **Step 9: Github site creation and Datastory redaction**
 
@@ -64,10 +65,16 @@ As a next phase, a sentiment analysis will be conducted to study the polarity of
 - Step 5 (started but needs improvements)  
 
 **Between 02/12/22 to 23/12/22:** 
-- First week: finish part 5, that is fine-tuned LDA, analyse results from LDA and BERT and create visualizations.
-- Second week: finish part 6, that is perfom Sentiment analysis, analyse data and create visualizations.
-- Last week: finish part 7 and 8
+- First week: finish part 5, that is fine-tuned LDA, analyse results from LDA and BERT and create visualizations. Do part 6 that is perfom Sentiment analysis, analyse data and create visualizations.
+- Second week: finish part 7, make statistical testings and visualisations.
+- Last week: finish part 8 and 9
 
-## ${\color{#CC0000} \mathrm{Organisation within the team}} <a name="Organisation_within_the_team"></a>
+## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
+- Step 5: Nearchos, Clara
+- Step 6: Clara, Anna
+- Step 7: Salomé, Anna
+- Step 8: Everybody
+- Step 9: Everybody 
 
-## ${\color{#CC0000} \mathrm{Questions for the TAs}} <a name="Questions"></a>
+## ${\color{#CC0000}\mathrm{Questions\ for\ the\ TAs}}$ <a name="Questions_for_the_TAs"></a>
+
