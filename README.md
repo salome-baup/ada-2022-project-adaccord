@@ -28,7 +28,7 @@ The following additional datasets are used or are planned to be used:
 
 ## Methods <a name="Methods"></a>
 **Step 1: Metadata scrapping, cleaning, and dealing with duplicate or missing values**
-After loading the characters and movies dataset, columns are cleaned by removing the freebase ID. Then, duplicated values are checked in both datasets and finally missing values are handled.
+After loading the characters and movies datasets, columns are cleaned by removing the freebase ID. Then, duplicated values are checked in both datasets and finally missing values are handled.
 
 **Step 2: Plot summaries pre-processing**
 Plot summaries are loaded, missing one are checked, and only English plots are kept. Then, pre-processing is done, including tokenization to divide plots into lists of substrings, PoS tagging to categorize words, lemmatization to reduce the different forms of a word to one single form and finally stop words removal to only extract meaningful information.
