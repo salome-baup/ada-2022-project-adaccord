@@ -38,9 +38,10 @@ Plot summaries are loaded, cleaned (only English ones are kept) and missing plot
 To obtain a better characterization of the movie at a time close to the release date, Metascore are loaded, missing values are checked and scores are then added to the movies dataset.
 
 **Step 4: General preliminary analysis**  
-In this part, we compute preliminary information about plot structure such as number of words and punctuation, polarity of words and the ten most tokens for each plots. In addition, the movie genre feature is explored. Then some statistics and visualizations are shown for all this indormation.
+In this part, we compute preliminary information about plot structure such as number of words and punctuation, polarity of words and the ten most tokens for each plots. In addition, the movie genre feature is explored. Then some statistics and visualizations are shown for all this information.
 
 **Step 5: Topic extraction**  
+First of all, genres are clustered in bigger genre categories.
 To characterize the plot summaries lexical fields, topics extraction are performed using natural language processing (NLP) techniques. The idea is to analyze the frequency of words and phrases in plot summaries, as well as their relationship in order to find clusters of words that appear more frequently.   
 - The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique returns the most common topics among all plots and can subsequently be fine-tuned to improve results. Each movie plot is then associated with a combination of tree different topics, where coefficients reprensent the propability for each topic. Finally, only the topic with the highest probability is kept.  
 - The second technique used is the Bidirectional Encoder Representations from Transformers (BERT). It uses a transformer, that is an attention mechanism learning contextual relations between words via an encoder that reads the text input. The difference with this technique is that it reads the input text in a non-directional manner, which is why it is consider BidirectionaL. Finally, each plot is associated with one representtative topic.
@@ -70,7 +71,7 @@ Taking all the results together, we will draw conclusions and try to answer our 
 - Last week: finish part 8 and 9
 
 ## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
-- Step 5: Nearchos, Clara
+- Step 5: Nearchos (NLP models), Salomé (Genres), Clara
 - Step 6: Clara, Anna
 - Step 7: Salomé, Anna
 - Step 8: Everybody
