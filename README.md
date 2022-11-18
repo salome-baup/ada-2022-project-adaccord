@@ -15,7 +15,7 @@ The goal in this project is to analyze the content of plot summaries and charact
 
 ## Research Questions <a name="Research_questions"></a>
 During this work, we will address those questions:  
-- What are the most prevalent concerns of the world population ? OR How the cinema reflects the most prevalent concerns of the world population ?
+- What are the most prevalent concerns of the world population reflected by cinema ?
 - Which feelings are associated with these topics ?
 - How are these concerns and feelings evolving over time ?
 
