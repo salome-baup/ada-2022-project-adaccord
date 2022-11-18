@@ -36,11 +36,11 @@ Plot summaries are loaded, cleaned (only English ones are kept) and missing plot
 To obtain a better characterization of the movie at a time close to the release date, Metascore are loaded, missing values are checked and scores are then added to the movies dataset.
 
 **Step 4: General preliminary analysis**  
-This part contains a preliminary analysis of the plots structure with the information gathered until then. Some statistics and visualizations are shown concerning the number of words and punctuation, the polarity of words and the movie genre distribution. In addition, the ten most tokens for each plots are obtained.
+In this part, we compute preliminary information about plot structure such as number of words and punctuation, polarity of words and the ten most tokens for each plots. In addition, the movie genre feature is explored. Then some statistics and visualizations are shown for all this indormation.
 
 **Step 5: Topic extraction**  
-To characterize the plot summaries lexical fields, topics extraction are performed using natural language processing (NLP) techniques. The idea is to analyze the frequency of words and phrases in plot summaries, as well well as their relationship in order to find clusters of words that appear more frequently.   
-- The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique returns the most common topics among all plots and can subsequently be fine-tuned to improve results.  
+To characterize the plot summaries lexical fields, topics extraction are performed using natural language processing (NLP) techniques. The idea is to analyze the frequency of words and phrases in plot summaries, as well as their relationship in order to find clusters of words that appear more frequently.   
+- The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique returns the most common topics among all plots and can subsequently be fine-tuned to improve results. Each movie plot is finally associated with a linear combination of tree different topics, where coefficients reprensent the propability for each topic.  
 - The second technique used is the Bidirectional Encoder Representations from Transformers (BERT). It uses a transformer, that is an attention mechanism learning contextual relations between words via an encoder that reads the text input. The difference with this technique is that it reads the input text in a non-directional manner, which is why it is consider BidirectionaL.
 
 **Step 6: Sentiment analysis**  
