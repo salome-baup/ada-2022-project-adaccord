@@ -22,9 +22,8 @@ During this work, we will address those questions:
 ## Proposed additional datasets and files <a name="Proposed_additional_datasets_and_files"></a>
 The following additional datasets are used or are planned to be used:
 - [Mappages Freebase/Wikidata](https://developers.google.com/freebase#freebase-wikidata-mappings): maps the given Freebase Ids to WikiData, used to recover ethnicities and actor names in the dataset.
-- [Metascore](https://github.com/miazhx/metacritic): weighted average of reviews from top published critic reviews for a given movie, will be used to weight the different concerns.
+- [Metacritic](https://github.com/miazhx/metacritic): Metascore feature, a weighted average of reviews from top published critic reviews for a given movie, will be used to weight the different concerns.
 - [names_dataset](https://pypi.org/project/names-dataset/): provides information about names (popularity, country, gender), used to discard proper names from plot summaries.
-- others ??
 
 ## Methods <a name="Methods"></a>
 **Step 1: Metadata scrapping, cleaning, and dealing with duplicate or missing values**  
