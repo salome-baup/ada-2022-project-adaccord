@@ -75,7 +75,7 @@ Taking all the results together, we will draw conclusions and try to answer our 
 - Last week: finish part 8 and 9
 
 ## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
-- Step 5: Nearchos (NLP models), Salomé (Genres), Clara
+- Step 5: Nearchos, Clara
 - Step 6: Clara, Anna
 - Step 7: Salomé, Anna
 - Step 8: Everybody
