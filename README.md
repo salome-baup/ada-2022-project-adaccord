@@ -30,7 +30,7 @@ The following additional datasets are used or are planned to be used:
 After loading the characters and movies datasets, columns are cleaned by removing the freebase ID. Then, duplicated values are checked in both datasets and finally missing values are handled.
 
 **Step 2: Plot summaries pre-processing**  
-Plot summaries are loaded, cleaned (only English ones are kept) and missing plots are checked. Then, pre-processing is performed, including tokenization to divide plots into lists of substrings, PoS tagging to categorize words, lemmatization to reduce the different forms of a word to one single form and finally stop words removal to only extract meaningful information.
+Plot summaries are loaded, cleaned (only English ones are kept) and missing plots are checked. Then, pre-processing is performed, including tokenization to divide plots into lists of substrings, PoS tagging to categorize words, lemmatization to reduce the different forms of a word to one single form and finally stop words removal to only extract meaningful information. We then augmented the movies dataset with this information.
 
 **Step 3: Including Metascore**  
 To obtain a better characterization of the movie at a time close to the release date, Metascore are loaded, missing values are checked and scores are then added to the movies dataset.
