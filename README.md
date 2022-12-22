@@ -7,7 +7,10 @@ In addition, intermediary augmented datasets are present on a [GoogleDrive](http
 ## ${\color{#CC0000}\mathrm{Data story}}$
 Our project's data story is available [here](https://clararenou.github.io/).
 
-## ${\color{#CC0000}\mathrm{Repo\ architecture}}$
+## ${\color{#CC0000}\mathrm{Repo\ architecture}}$  
+EDA_Preprocess_Models.ipynb: This first notebook contains what have been done for Milestone 2. In addition, BERT model has been fine-tuned and the sentiment analysis, as well as the concern analysis have been added to the notebook. Thus, our final dataset is obtained at the end of this notebook.
+
+Analysis_Visualizations.ipynb: In this second notebook, we are displaying the visualizations for data obtained in the previous notebook, that is for topics, sentiments and concerns. We are comparing these three features over time and between each other. In addition, the statistical analysis is also performed in this notebook.
 
 ## ${\color{#CC0000}\mathrm{Table\ of\ Contents}}$
 1. [Abstract](#Abstract)
@@ -94,11 +97,11 @@ Sentiment analysis has been conducted to study the polarity of plot summaries an
   - Step 9: Data story writing
 
 ## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
-Anna: 
+Anna: Sentiment analysis, statistical analysis, visualization: sentiment over time, topic proportion over time, sentiment + topic (radar plot), data story writing.
 
-Clara:
+Clara: Sentiment analysis, visualizations: topic over time (heatmap), sentiment + topic (radar plot), topic + concern (radar plot), topic proportion (bubble plot), website creation, data story writing.
 
-Nearchos:
+Nearchos: BERT fine-tuning, visualizations: BERT topic over time, sentiment + topic over time, concern and sentiment association.
 
-Salomé: 
+Salomé: Concern analysis, visualizations: concern proportion (bubble plot), concern over time, wordclouds.
 
