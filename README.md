@@ -61,7 +61,7 @@ To characterize the plot summaries lexical fields, topics extraction are perform
 **Step 6: Concerns categories**  
 We were interested to know if societal concerns emerge from movies. Using the [Empath](https://github.com/Ejhfast/empath-client) tool, lexicon categories for concerns are created based on lead words. The selected concerns are: Ecology, Health, War & Conflicts, Technology, Space, Gender inequalities, LGBTQ+ community & Homophobia, Racism, Mental state, Human interactions & Relationships.  
 - For this analysis, plot summaries have been preprocessed in a way corresponding to the Empath analysis tool. Tokens are not lemmatized and no casefolding is performed, character names are removed and bigrams are finally created. Then, those plot summaries were analyzed by Empath which gave a normalized score to each movie for each concern.
-- The most present words in plot summaries for each category have been collected.
+- In addition to the continuous score distribution over movies, each movies is assigned to one concern based on its higher score. From this, the most present words in plot summaries for each category have been collected.
 
 **Step 7: Sentiment analysis**  
 Sentiment analysis has been conducted to study the polarity of plot summaries and determine the global feelings associated with them.
@@ -103,5 +103,5 @@ Clara: Sentiment analysis, visualizations: topic over time (heatmap), sentiment 
 
 Nearchos: BERT fine-tuning, visualizations: BERT topic over time, sentiment + topic over time, concern and sentiment association.
 
-Salomé: Concern analysis, visualizations: concern proportion (bubble plot), concern over time, wordclouds.
+Salomé: Concerns creation and analysis, Concerns visualizations: wordclouds, words proportion, concerns across movies and over time.
 
