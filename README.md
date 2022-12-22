@@ -67,10 +67,10 @@ Sentiment analysis has been conducted to study the polarity of plot summaries an
 
 **Step 8: Results, Analyses and Interpretation**  
 - Time evolution: topics, concerns and sentiments evolution over time is analyzed by splitting the movies according to their release dates or by periods of 5 years.
-- Distribution of topics, concerns and sentiments among movies 
+- Distribution of topics, concerns and sentiments among movies.
 - Association of topics and sentiments and their co-evolution over time is analysed.
 - Association of concerns with topics and sentiments.
-- Statistical analysis is then performed .   
+- Statistical analysis is then performed.   
 
 **Step 9: Github site creation and Datastory redaction**
 
