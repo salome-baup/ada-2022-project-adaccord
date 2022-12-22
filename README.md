@@ -5,7 +5,7 @@ You will find a requirement.txt file to install any required libraries.
 In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub. 
 
 ## ${\color{#CC0000}\mathrm{Table\ of\ Contents}}$
-1. [Abstract](#Abstract)
+1. [Abstract](#Abstract)</a>
 2. [Research questions](#Research_questions)
 3. [Proposed additional datasets and files](#Proposed_additional_datasets_and_files)
 4. [Methods](#Methods)
