@@ -5,7 +5,9 @@ You will find a requirement.txt file to install any required libraries.
 In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub.
 
 ## ${\color{#CC0000}\mathrm{Data story}}$
-Our project's data story is available [here](https://clararenou.github.io/). 
+Our project's data story is available [here](https://clararenou.github.io/).
+
+## ${\color{#CC0000}\mathrm{Repo\ architecture}}$
 
 ## ${\color{#CC0000}\mathrm{Table\ of\ Contents}}$
 1. [Abstract](#Abstract)
