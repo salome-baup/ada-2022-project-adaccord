@@ -2,14 +2,17 @@
 
 ## ${\color{#CC0000}\mathrm{Requirements}}$
 You will find a requirement.txt file to install any required libraries.  
-In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub. 
+In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub.
+
+## ${\color{#CC0000}\mathrm{Data story}}$
+Our project's data story is available [here](https://clararenou.github.io/). 
 
 ## ${\color{#CC0000}\mathrm{Table\ of\ Contents}}$
-1. [Abstract](#Abstract)</a>
+1. [Abstract](#Abstract)
 2. [Research questions](#Research_questions)
 3. [Proposed additional datasets and files](#Proposed_additional_datasets_and_files)
 4. [Methods](#Methods)
-5. [Proposed timeline](#Proposed_timeline)
+5. [Timelime](#Timeline)
 6. [Organisation within the team](#Organisation_within_the_team)
 7. [Questions for the TAs](#Questions_for_the_TAs)
 
@@ -50,36 +53,50 @@ To characterize the plot summaries lexical fields, topics extraction are perform
 - The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique returns the most common topics among all plots and can subsequently be fine-tuned to improve results. Each movie plot is then associated with a combination of tree different topics, where coefficients reprensent the propability for each topic. Finally, only the topic with the highest probability is kept.  
 - The second technique used is the Bidirectional Encoder Representations from Transformers (BERT). It uses a transformer, that is an attention mechanism learning contextual relations between words via an encoder that reads the text input. The difference with this technique is that it reads the input text in a non-directional manner, which is why it is consider BidirectionaL. Finally, each plot is associated with one representtative topic.
 
-**Step 6: Sentiment analysis**  
-As a next phase, a sentiment analysis will be conducted to study the polarity of plot summaries and determine the global feelings associated with them.
+**Step 6: Concerns categories**
+We were interested to know if societal concerns emerge from movies. Using the [Empath](https://github.com/Ejhfast/empath-client) tool, lexicon categories for concerns are created based on lead words. The selected concerns are: Ecology, Health, War & Conflicts, Technology, Space, Gender inequalities, LGBTQ+ community & Homophobia, Racism, Mental state, Human interactions & Relationships.  
+- For this analysis, plot summaries have been preprocessed in a way corresponding to the Empath analysis tool. Tokens are not lemmatized and no casefolding is performed, character names are removed and bigrams are finally created. Then, those plot summaries were analyzed by Empath which gave a normalized score to each movie for each concern.
+- The most present words in plot summaries for each category have been collected.
 
-**Step 7: Time evolution analysis**  
-Concerns and sentiments evolution over time will be analyzed by splitting the movies according to their release dates. Statistical analysis will then be performed to see any significative differences across periods of time. 
+**Step 7: Sentiment analysis**  
+Sentiment analysis has been conducted to study the polarity of plot summaries and determine the global feelings associated with them.
+- The Valence Aware Dictionary for sEntiment Reasoning model, `VADER`, is first used to extract sentiment scores for four categories: positive, negative, neutral and compound. While neutral, positive and negative scores are probabilities to have each given sentiment, the compound score is the sum of positive, negative and neutral scores. This compound score is then normalized between -1 (most extreme negative) and +1 (most extreme positive).
+- Then to refine our analysis, plot summaries are characterized with more complex sentiments using the `NRCLex` library which is able to measure emotional affect from a text body. Affect dictionary contains approximately 27'000 words, and is based on the National Research Council Canada (NRC) affect lexicon and the NLTK library's WordNet synonym sets [See documentation](https://pypi.org/project/NRCLex/)). For our analysis, emotional affects includes fear, anger, anticipation, trust, surprise, positive, negative, sadness, disgust, joy.
 
-**Step 8: Results gathering and interpretation**  
-Taking all the results together, we will draw conclusions and try to answer our research questions. 
+**Step 8: Results, Analyses and Interpretation**  
+- Time evolution: Topics, concerns and sentiments evolution over time is analyzed by splitting the movies according to their release dates, by periods of 5 years.
+- Movies distribution in topics, concerns and sentiments
+- Topics and sentiments are associated and their co-evolution over time is analysed.
+- Concerns are associated with topics and with sentiments.
+- Statistical analysis are then performed.   
 
 **Step 9: Github site creation and Datastory redaction**
 
-## ${\color{#CC0000}\mathrm{Proposed\ timeline}}$ <a name="Proposed_timeline"></a>
+## ${\color{#CC0000}\mathrm{Timeline}}$ <a name="Proposed_timeline"></a>
 **Done for Milestone 2 (18/11/22):**
-- Step 1 (finished)
-- Step 2 (finished)
-- Step 3 (finished)
-- Step 4 (finished)
-- Step 5 (started but needs improvements)  
+- Steps 1, 2, 3, 4 have been completed during Milestone 2.
+- Step 5 has been started but needed improvements.  
 
-**Between 02/12/22 to 23/12/22:** 
-- First week: finish part 5, that is fine-tuned LDA, analyse results from LDA and BERT and create visualizations. Do part 6 that is perfom Sentiment analysis, analyse data and create visualizations.
-- Second week: finish part 7, make statistical testings and visualisations.
-- Last week: finish part 8 and 9
+**Miletsone 3: From 02/12/22 to 23/12/22:** 
+- First week:
+  - Step 5: Fine-tuning of LDA and BERT.
+  - Step 6: Creation of concerns lexical categories and Empath analysis.
+  - Step 7: Performing sentiment analysis.
+  - Step 8: Visualisation of topics, concerns and sentiments independently across movies and time.
+- Second week:
+  - Step 8: Combined informations and visualizations
+  - Step 8: Statistical testing
+  - Step 9: Website creation
+- Last week:
+  - Step 8: Interpretations
+  - Step 9: Data story writing
 
 ## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
-- Step 5: Nearchos, Clara
-- Step 6: Clara, Anna
-- Step 7: Salomé, Anna
-- Step 8: Everybody
-- Step 9: Everybody 
+Anna: 
 
-## ${\color{#CC0000}\mathrm{Questions\ for\ the\ TAs}}$ <a name="Questions_for_the_TAs"></a>
-Do you know any existing model for multi-sentiment analysis? Which option do we have in order to have more complex sentiment classes such as sadness, fear, happiness, anger (...)?
+Clara:
+
+Nearchos:
+
+Salomé: 
+
