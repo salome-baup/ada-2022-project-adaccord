@@ -55,7 +55,7 @@ To characterize the plot summaries lexical fields, topics extraction are perform
 - The first technique used is the Latent Dirichlet Allocation (LDA), which is an unsupervised clustering technique commonly used for text analysis. In this case, words are represented as topics, and plot summaries are represented as a collectecion of these word topics. This technique returns the most common topics among all plots and can subsequently be fine-tuned to improve results. Each movie plot is then associated with a combination of tree different topics, where coefficients reprensent the propability for each topic. Finally, only the topic with the highest probability is kept.  
 - The second technique used is the Bidirectional Encoder Representations from Transformers (BERT). It uses a transformer, that is an attention mechanism learning contextual relations between words via an encoder that reads the text input. The difference with this technique is that it reads the input text in a non-directional manner, which is why it is consider BidirectionaL. Finally, each plot is associated with one representtative topic.
 
-**Step 6: Concerns categories**
+**Step 6: Concerns categories**  
 We were interested to know if societal concerns emerge from movies. Using the [Empath](https://github.com/Ejhfast/empath-client) tool, lexicon categories for concerns are created based on lead words. The selected concerns are: Ecology, Health, War & Conflicts, Technology, Space, Gender inequalities, LGBTQ+ community & Homophobia, Racism, Mental state, Human interactions & Relationships.  
 - For this analysis, plot summaries have been preprocessed in a way corresponding to the Empath analysis tool. Tokens are not lemmatized and no casefolding is performed, character names are removed and bigrams are finally created. Then, those plot summaries were analyzed by Empath which gave a normalized score to each movie for each concern.
 - The most present words in plot summaries for each category have been collected.
@@ -63,14 +63,14 @@ We were interested to know if societal concerns emerge from movies. Using the [E
 **Step 7: Sentiment analysis**  
 Sentiment analysis has been conducted to study the polarity of plot summaries and determine the global feelings associated with them.
 - The Valence Aware Dictionary for sEntiment Reasoning model, `VADER`, is first used to extract sentiment scores for four categories: positive, negative, neutral and compound. While neutral, positive and negative scores are probabilities to have each given sentiment, the compound score is the sum of positive, negative and neutral scores. This compound score is then normalized between -1 (most extreme negative) and +1 (most extreme positive).
-- Then to refine our analysis, plot summaries are characterized with more complex sentiments using the `NRCLex` library which is able to measure emotional affect from a text body. Affect dictionary contains approximately 27'000 words, and is based on the National Research Council Canada (NRC) affect lexicon and the NLTK library's WordNet synonym sets [See documentation](https://pypi.org/project/NRCLex/)). For our analysis, emotional affects includes fear, anger, anticipation, trust, surprise, positive, negative, sadness, disgust, joy.
+- Then to refine our analysis, plot summaries are characterized with more complex sentiments using the `NRCLex` library which is able to measure emotional affect from a text body. Affect dictionary contains approximately 27'000 words, and is based on the National Research Council Canada (NRC) affect lexicon and the NLTK library's WordNet synonym sets ([see documentation](https://pypi.org/project/NRCLex/)). For our analysis, emotional affects include fear, anger, anticipation, trust, surprise, positive, negative, sadness, disgust, joy.
 
 **Step 8: Results, Analyses and Interpretation**  
-- Time evolution: Topics, concerns and sentiments evolution over time is analyzed by splitting the movies according to their release dates, by periods of 5 years.
-- Movies distribution in topics, concerns and sentiments
-- Topics and sentiments are associated and their co-evolution over time is analysed.
-- Concerns are associated with topics and with sentiments.
-- Statistical analysis are then performed.   
+- Time evolution: topics, concerns and sentiments evolution over time is analyzed by splitting the movies according to their release dates or by periods of 5 years.
+- Distribution of topics, concerns and sentiments among movies 
+- Association of topics and sentiments and their co-evolution over time is analysed.
+- Association of concerns with topics and sentiments.
+- Statistical analysis is then performed .   
 
 **Step 9: Github site creation and Datastory redaction**
 
