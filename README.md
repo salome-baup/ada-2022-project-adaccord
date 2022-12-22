@@ -5,7 +5,7 @@ You will find a requirement.txt file to install any required libraries.
 In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub.
 
 ## ${\color{#CC0000}\mathrm{Data story}}$
-Our project's data story is available [here](https://clararenou.github.io/).
+Our project's data story is available [here](https://clararenou.github.io/Refl-action/).
 
 ## ${\color{#CC0000}\mathrm{Repo\ architecture}}$  
 EDA_Preprocess_Models.ipynb: This first notebook contains what have been done for Milestone 2. In addition, BERT model has been fine-tuned and the sentiment analysis, as well as the concern analysis have been added to the notebook. Thus, our final dataset is obtained at the end of this notebook.
