@@ -1,19 +1,30 @@
 
 os
+pickle
 json
 string
-requests
-Wikidata
+Tqdm
 numpy
 pandas
-nltk
-Tqdm
+wordcloud
+Pillow
 matplotlib.pyplot
 seaborn
+pyplot
+-U kaleido
+nltk
 gensim
-Datetime
 pyLDAvis
+bertopic
+Datetime
+requests
+Wikidata
 langdetect
 names-dataset
-bertopic
-wordcloud
+empath
+vaderSentiment
+scikit-posthocs
+-U scikit-learn
+NRCLex
+scipy
+statsmodels
