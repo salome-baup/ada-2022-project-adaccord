@@ -1,8 +1,5 @@
 # 🎬 ${\color{#CC0000} \mathrm{Refl'action:\ Cinema\ as\ a\ mirror\ of\ society's\ thoughts}}$
 
-## ${\color{#CC0000}\mathrm{Recommendations}}$
-Please feel free to read our notebooks [Analysis_Visualizations.ipynb](https://nbviewer.org/github/epfl-ada/ada-2022-project-adaccord/blob/main/Analysis_Visualizations.ipynb) and [EDA_Preprocess_Models.ipynb](https://nbviewer.org/github/epfl-ada/ada-2022-project-adaccord/blob/main/EDA_Preprocess_Models.ipynb) on [nbviewer.org](https://nbviewer.org/). This will allow you to navigate through them with more ease as you will be able to utilize the table of contents.
-
 ## ${\color{#CC0000}\mathrm{Requirements}}$
 You will find a requirement.txt file to install any required libraries.  
 In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub.
