@@ -17,9 +17,8 @@ Analysis_Visualizations.ipynb: In this second notebook, we are displaying the vi
 2. [Research questions](#Research_questions)
 3. [Proposed additional datasets and files](#Proposed_additional_datasets_and_files)
 4. [Methods](#Methods)
-5. [Timelime](#Timeline)
+5. [Timelime](#Proposed_timeline)
 6. [Organisation within the team](#Organisation_within_the_team)
-7. [Questions for the TAs](#Questions_for_the_TAs)
 
 
 ## ${\color{#CC0000}\mathrm{Abstract}}$  <a name="Abstract"></a> 
@@ -35,9 +34,9 @@ During this work, we will address those questions:
 
 ## ${\color{#CC0000}\mathrm{Proposed\ additional\ datasets\ and\ files}}$ <a name="Proposed_additional_datasets_and_files"></a>
 The following additional datasets are used or are planned to be used:
-- [Mappages Freebase/Wikidata](https://developers.google.com/freebase#freebase-wikidata-mappings): maps the given Freebase Ids to WikiData, used to recover ethnicities and actor names in the dataset.
+- [Mappages Freebase/Wikidata](https://developers.google.com/freebase#freebase-wikidata-mappings): Maps the given Freebase Ids to WikiData, used to recover ethnicities and actor names in the dataset.
 - [Metacritic](https://github.com/miazhx/metacritic): Metascore feature, a weighted average of reviews from top published critic reviews for a given movie, will be used to weight the different concerns.
-- [names_dataset](https://pypi.org/project/names-dataset/): provides information about names (popularity, country, gender), used to discard proper names from plot summaries.
+- [names_dataset](https://pypi.org/project/names-dataset/): Provides information about names (popularity, country, gender). In our study it will be used to extract the top 1000 most common names for each gender (in the US) which will then be removed from the plot summaries in order to avoid the "noise" that they cause.
 
 ## ${\color{#CC0000}\mathrm{Methods}}$ <a name="Methods"></a>
 **Step 1: Metadata scrapping, cleaning, and dealing with duplicate or missing values**  
@@ -97,11 +96,9 @@ Sentiment analysis has been conducted to study the polarity of plot summaries an
   - Step 9: Data story writing
 
 ## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
-Anna: Sentiment analysis, statistical analysis, visualization: sentiment over time, topic proportion over time, sentiment + topic (radar plot), data story writing.
-
-Clara: Sentiment analysis, visualizations: topic over time (heatmap), sentiment + topic (radar plot), topic + concern (radar plot), topic proportion (bubble plot), website creation, data story writing.
-
-Nearchos: BERT fine-tuning, visualizations: BERT topic over time, sentiment + topic over time, concern and sentiment association.
-
-Salomé: Concerns creation and analysis, Concerns visualizations: wordclouds, words proportion, concerns across movies and over time.
-
+| Member        | Task          |
+| ------------- |:------------- | 
+| Anna      | Sentiment analysis, statistical analysis, visualization: sentiment over time, topic proportion over time, sentiment + topic (radar plot), data story writing. |
+| Clara      | Sentiment analysis, visualizations: topic over time (heatmap), sentiment + topic (radar plot), topic + concern (radar plot), topic proportion (bubble plot), website creation, data story writing.      |
+| Nearchos|BERT fine-tuning, visualizations: BERT topic over time, sentiment + topic over time, concern and sentiment association.      |
+|Salomé| Concerns creation and analysis, Concerns visualizations: wordclouds, words proportion, concerns across movies and over time.|
