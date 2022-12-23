@@ -17,9 +17,8 @@ Analysis_Visualizations.ipynb: In this second notebook, we are displaying the vi
 2. [Research questions](#Research_questions)
 3. [Proposed additional datasets and files](#Proposed_additional_datasets_and_files)
 4. [Methods](#Methods)
-5. [Timelime](#Timeline)
+5. [Timelime](#Proposed_timeline)
 6. [Organisation within the team](#Organisation_within_the_team)
-7. [Questions for the TAs](#Questions_for_the_TAs)
 
 
 ## ${\color{#CC0000}\mathrm{Abstract}}$  <a name="Abstract"></a> 
@@ -97,11 +96,9 @@ Sentiment analysis has been conducted to study the polarity of plot summaries an
   - Step 9: Data story writing
 
 ## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
-Anna: Sentiment analysis, statistical analysis, visualization: sentiment over time, topic proportion over time, sentiment + topic (radar plot), data story writing.
-
-Clara: Sentiment analysis, visualizations: topic over time (heatmap), sentiment + topic (radar plot), topic + concern (radar plot), topic proportion (bubble plot), website creation, data story writing.
-
-Nearchos: BERT fine-tuning, visualizations: BERT topic over time, sentiment + topic over time, concern and sentiment association.
-
-Salomé: Concerns creation and analysis, Concerns visualizations: wordclouds, words proportion, concerns across movies and over time.
-
+| Member        | Task          |
+| ------------- |:------------- | 
+| Anna      | Sentiment analysis, statistical analysis, visualization: sentiment over time, topic proportion over time, sentiment + topic (radar plot), data story writing. |
+| Clara      | Sentiment analysis, visualizations: topic over time (heatmap), sentiment + topic (radar plot), topic + concern (radar plot), topic proportion (bubble plot), website creation, data story writing.      |
+| Nearchos|BERT fine-tuning, visualizations: BERT topic over time, sentiment + topic over time, concern and sentiment association.      |
+|Salomé| Concerns creation and analysis, Concerns visualizations: wordclouds, words proportion, concerns across movies and over time.|
