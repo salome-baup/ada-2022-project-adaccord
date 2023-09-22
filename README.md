@@ -1,6 +1,4 @@
-# 🎬 $${\color{#CC0000} \mathrm{Refl'action:\ Cinema\ as\ a\ mirror\ of\ society's\ thoughts}}$$
-
-# $${\color{red}Red}$$
+# 🎬 ${\color{#CC0000} \mathrm{Refl'action:\ Cinema\ as\ a\ mirror\ of\ society's\ thoughts}}$
 
 ## ${\color{#CC0000}\mathrm{Requirements}}$
 You will find a requirement.txt file to install any required libraries.  
