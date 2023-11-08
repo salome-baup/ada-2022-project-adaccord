@@ -1,18 +1,18 @@
-# 🎬 ${\color{#CC0000} \mathrm{Refl'action:\ Cinema\ as\ a\ mirror\ of\ society's\ thoughts}}$
+# 🎬 Refl'action: Cinema as a mirror of society's thoughts
 
-## ${\color{#CC0000}\mathrm{Requirements}}$
+## Requirements
 You will find a requirement.txt file to install any required libraries.  
 In addition, intermediary augmented datasets are present on a [GoogleDrive](https://drive.google.com/drive/folders/1pUw3DCFzGdlNXRTiX8NZgG0wjSsQYbkZ?usp=sharing). Those files are too big to be on GitHub.
 
-## ${\color{#CC0000}\mathrm{Data story}}$
+## Data story
 Our project's data story is available [here](https://clararenou.github.io/Refl-action/).
 
-## ${\color{#CC0000}\mathrm{Repo\ architecture}}$  
+## Repo architecture
 EDA_Preprocess_Models.ipynb: This first notebook contains what have been done for Milestone 2. In addition, BERT model has been fine-tuned and the sentiment analysis, as well as the concern analysis have been added to the notebook. Thus, our final dataset is obtained at the end of this notebook.
 
 Analysis_Visualizations.ipynb: In this second notebook, we are displaying the visualizations for data obtained in the previous notebook, that is for topics, sentiments and concerns. We are comparing these three features over time and between each other. In addition, the statistical analysis is also performed in this notebook.
 
-## ${\color{#CC0000}\mathrm{Table\ of\ Contents}}$
+## Table of Contents
 1. [Abstract](#Abstract)
 2. [Research questions](#Research_questions)
 3. [Proposed additional datasets and files](#Proposed_additional_datasets_and_files)
@@ -21,24 +21,24 @@ Analysis_Visualizations.ipynb: In this second notebook, we are displaying the vi
 6. [Organisation within the team](#Organisation_within_the_team)
 
 
-## ${\color{#CC0000}\mathrm{Abstract}}$  <a name="Abstract"></a> 
+## Abstract  <a name="Abstract"></a> 
 
 In the 17th century, Molière, the French playwright, actor and poet depicted the customs and morals of his day. The analysis of his work allows us today to have an idea of the societal issues and the questionings of that time. Artistic expression and, more precisely, the 7th art can provide a lot of information about society’s thoughts.   
 The goal in this project is to analyze the content of plot summaries and characterized them by looking at the lexical fields, word occurrences, as well as the words polarity and general sentences. This would allow to identify the main concerns of society (e.g., climate catastrophe, war, technological disaster, family disunity) and evaluate the feelings associated with these topics. We also want to see the evolution of these concerns over time and include critical reviews of the movies to obtain a more complete characterization of the situation.
 
-## ${\color{#CC0000}\mathrm{Research\ questions}}$ <a name="Research_questions"></a>
+## Research questions <a name="Research_questions"></a>
 During this work, we will address those questions:  
 - What are the most prevalent concerns of the world population reflected by cinema?
 - Which feelings are associated with these topics?
 - How are these concerns and feelings evolving over time?
 
-## ${\color{#CC0000}\mathrm{Proposed\ additional\ datasets\ and\ files}}$ <a name="Proposed_additional_datasets_and_files"></a>
+## Proposed additional dataset and files <a name="Proposed_additional_datasets_and_files"></a>
 The following additional datasets are used or are planned to be used:
 - [Mappages Freebase/Wikidata](https://developers.google.com/freebase#freebase-wikidata-mappings): Maps the given Freebase Ids to WikiData, used to recover ethnicities and actor names in the dataset.
 - [Metacritic](https://github.com/miazhx/metacritic): Metascore feature, a weighted average of reviews from top published critic reviews for a given movie, will be used to weight the different concerns.
 - [names_dataset](https://pypi.org/project/names-dataset/): Provides information about names (popularity, country, gender). In our study it will be used to extract the top 1000 most common names for each gender (in the US) which will then be removed from the plot summaries in order to avoid the "noise" that they cause.
 
-## ${\color{#CC0000}\mathrm{Methods}}$ <a name="Methods"></a>
+## Methods <a name="Methods"></a>
 **Step 1: Metadata scrapping, cleaning, and dealing with duplicate or missing values**  
 After loading the characters and movies datasets, columns are cleaned by removing the freebase ID. Then, duplicated values are checked in both datasets and finally missing values are handled.
 
@@ -76,7 +76,7 @@ Sentiment analysis has been conducted to study the polarity of plot summaries an
 
 **Step 9: Github site creation and Datastory redaction**
 
-## ${\color{#CC0000}\mathrm{Timeline}}$ <a name="Proposed_timeline"></a>
+## Timeline <a name="Proposed_timeline"></a>
 **Done for Milestone 2 (18/11/22):**
 - Steps 1, 2, 3, 4 have been completed during Milestone 2.
 - Step 5 has been started but needed improvements.  
@@ -95,7 +95,7 @@ Sentiment analysis has been conducted to study the polarity of plot summaries an
   - Step 8: Interpretations
   - Step 9: Data story writing
 
-## ${\color{#CC0000}\mathrm{Organisation\ within\ the\ team}}$ <a name="Organisation_within_the_team"></a>
+## Organisation within the team <a name="Organisation_within_the_team"></a>
 | Member        | Task          |
 | ------------- |:------------- | 
 | Anna      | Sentiment analysis, statistical analysis, visualization: sentiment over time, topic proportion over time, sentiment + topic (radar plot), data story writing. |
